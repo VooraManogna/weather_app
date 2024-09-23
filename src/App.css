@@ -1,0 +1,76 @@
+.app-container.full-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-container.with-dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100vh;
+}
+
+.main-section {
+  position: relative;
+  background-image: url('https://github.com/Aloke-practice/gauravghai-weatherApp-Reactjs/blob/master/src/images/background.jpg?raw=true '); 
+  /* background-color: rgb(108, 106, 106); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  transition: width 0.3s ease, background-image 0.5s ease;
+}
+
+.sunny{
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5ce7218fc886670001846402/1622237076775-M8OMTYD2YSPES37C2NXQ/shutterstock_561665098.jpg?format=1000w');
+}
+.clouds {
+   background-image: url('https://torange.biz/photo/55/IMAGE/beautiful-cloudy-sunny-day-55250.jpg');
+}
+.rainy{
+   background-image:url('https://static.vecteezy.com/system/resources/previews/029/772/287/large_2x/human-daily-life-on-rainy-day-enjoying-rainfall-and-happy-life-lively-rainy-season-concept-generative-ai-free-photo.jpeg');
+}
+.snow {
+   background-image: url('https://w0.peakpx.com/wallpaper/20/99/HD-wallpaper-snowy-day-stream-snow-winter-snowflakes.jpg');
+}
+.haze,.mist{
+  background-image: url('https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?cs=srgb&dl=pexels-veeterzy-39811.jpg&fm=jpg');
+  color: white;
+}
+.defa{
+  background-image: url('https://github.com/Aloke-practice/gauravghai-weatherApp-Reactjs/blob/master/src/images/background.jpg?raw=true ');
+}
+      /* default: */
+         /* { backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY9ySzivdh9z9BRbQ0PGDiYbvkVFRkrSirvQ&s')" }; */
+         /* https://github.com/Aloke-practice/gauravghai-weatherApp-Reactjs/blob/master/src/images/background.jpg?raw=true */
+
+.dashboard-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.dashboard-section {
+  background-color: rgba(23, 22, 22, 0.888);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.app-container.full-screen .dashboard-section {
+  display: none;
+}
+

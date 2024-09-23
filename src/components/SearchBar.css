@@ -1,0 +1,42 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .city-input {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+  border: none; /* Remove border if you want a clean look */
+  border-radius: 10px; /* Optional: add some border radius */
+  padding: 10px; /* Adjust padding as needed */
+  color: white; /* Change text color for better visibility */
+  font-size: 16px; /* Adjust font size */
+  }
+
+  .search-bar button {
+    background-color: rgba(255, 255, 255, 0.5); /* Same transparent background */
+    border: none;
+    border-radius: 10px; /* Match with input */
+    color: white; /* Button text color */
+    padding: 10px; /* Match padding */
+    margin: 10px;
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .search-bar button:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly darker on hover */
+  }
+  
+  
+  /* .icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .icon:hover {
+    color: #007BFF;
+  } */
+  .search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder color */
+  } 
